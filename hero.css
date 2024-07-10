@@ -1,12 +1,13 @@
 .Hero{
     margin-top: 8vh;
-    position:absolute;
+    position:relative;
 }
 
 .hero-box{
-    margin:5vw 5vw 5vw 5vw;
+    margin:12vh 5vw 5vw 5vw;
     border-radius: 2vw;
-    min-height: 80vh;
+    min-height: 60vh;
+    max-height: 90vh;
     min-width: 90vw;
     background: linear-gradient(135deg, #13072e, #5c2594);
     display: flex;
@@ -16,9 +17,7 @@
 
 
 }
-.left-box{
-    min-width: 50%;
-}
+
 .right-box{
     min-width: 50%;
     justify-content: center;
@@ -28,4 +27,47 @@
 .right-box img{
     width:100%;
    
+}
+
+.left-box{
+    min-width: 50%;
+    min-height: 80em;
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start ;
+}
+.left-box-heading{
+    margin-top: 5vh;
+    margin-left: 2vw;
+    font-size: 7vh;
+    color:whitesmoke;
+    font-family: "Be Vietnam Pro", sans-serif;
+font-weight: 500;
+font-style: normal;
+
+}
+.left-box-subheading{
+    font-size: 3vh;
+    font-weight: 1000;
+    color:#D8A8F7;
+    margin-left: 2vw;
+    margin-top: 3vh;
+    margin-bottom: 4vh;
+}
+#Demo-navbar1{
+    text-decoration: none;
+background-color: aliceblue;
+color: #13072E;
+border-radius: 10vw;
+border: 2% white solid;
+font-size: 2vh;
+margin-left: 2vw;
+min-width:10vw;
+padding: 4%;
+display: inline-block;
+padding-left: 10%;
+padding-right: 10%;
+text-align: center; /* Centers the text within the a tag */
+white-space: nowrap;
+
 }
