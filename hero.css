@@ -71,3 +71,75 @@ text-align: center; /* Centers the text within the a tag */
 white-space: nowrap;
 
 }
+
+@media screen and (max-width:780px) {
+    
+.hero-box{
+    margin:12vh 5vw 5vw 5vw;
+    border-radius: 2vw;
+    min-height: 70vh;
+    max-height: 90vh;
+    min-width: 90vw;
+    background: linear-gradient(135deg, #13072e, #5c2594);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.left-box{
+    min-width: 30%;
+    min-height: 50%;
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start ;
+}
+
+
+.left-box-heading{
+    margin-top: 2vh;
+    margin-left: 2vw;
+    font-size: 5vh;
+    color:whitesmoke;
+    font-family: "Be Vietnam Pro", sans-serif;
+font-weight: 500;
+font-style: normal;
+
+}
+.left-box-subheading{
+    font-size: 1.5vh;
+    font-weight: 1000;
+    color:#D8A8F7;
+    margin-left: 2vw;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+}
+#Demo-navbar1{
+    text-decoration: none;
+background-color: aliceblue;
+color: #13072E;
+border-radius: 10vw;
+border: 2% white solid;
+font-size: 1.2vh;
+margin-left: 2vw;
+min-width:15vw;
+padding: 4%;
+display: inline-block;
+padding-left: 10%;
+padding-right: 10%;
+text-align: center; /* Centers the text within the a tag */
+white-space: nowrap;
+
+}
+.right-box img{
+    width:100%;
+    transform: scale(1); /* Scales the image by 200% */
+    transform-origin: 0 0;
+   
+}
+
+
+
+}
