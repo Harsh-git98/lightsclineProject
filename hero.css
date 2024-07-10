@@ -76,7 +76,6 @@ white-space: nowrap;
     
 .hero-box{
     margin:12vh 5vw 5vw 5vw;
-    border-radius: 2vw;
     min-height: 70vh;
     max-height: 90vh;
     min-width: 90vw;
@@ -84,17 +83,24 @@ white-space: nowrap;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 
 
 }
 
 .left-box{
     min-width: 30%;
-    min-height: 50%;
+    max-height: 40%;
+    min-height: 40%;
     display: flex;
     flex-direction:column;
-    align-items: flex-start ;
+    justify-content: flex-start; /* Align items from top */
+    align-items: flex-start; 
+    
+}
+.right-box{
+    max-height: 50%;
+    overflow: hidden;
 }
 
 
@@ -134,6 +140,7 @@ white-space: nowrap;
 
 }
 .right-box img{
+
     width:100%;
     transform: scale(1); /* Scales the image by 200% */
     transform-origin: 0 0;
@@ -142,4 +149,32 @@ white-space: nowrap;
 
 
 
+}
+
+
+
+
+.left-box-heading{
+background-image: linear-gradient(
+-220deg,
+white 0%,
+hsl(276, 94%, 80%) 39%,
+white 67%,
+#ca8af5 100%
+);
+background-size: auto auto;
+background-clip: border-box;
+background-size: 200% auto;
+color: #fff;
+background-clip: text;
+
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: textclip 20s linear infinite;
+}
+
+@keyframes textclip {
+to {
+background-position: 200% center;
+}
 }
