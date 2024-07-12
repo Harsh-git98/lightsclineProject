@@ -1,0 +1,206 @@
+
+.work-info-wrapper {
+    width: 100%;
+    max-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.work-info-container {
+    min-height: 50vh;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.work-info-card {
+    width: 8vw;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: space-around;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+  
+}
+
+.work-info-card > .work-info-row {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    height: 100%;
+ 
+}
+
+.work-info-card > .work-info-row > .work-info-icon {
+    background: #D8A8F7;
+    color: #13072e;
+    border-radius: 50%;
+    width: 5vh;
+    height: 5vh;
+    font-size: 3vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    margin: 15px;
+}
+
+.work-info-card > .work-info-row > .work-info-description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100%;
+    width: 50vw;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.work-info-description p {
+    color: #D8A8F7;
+    text-align: justify;
+    width:80%;
+    padding-top: 5px;
+    font-size: 16px;
+    margin-left: 10%;
+    
+}
+
+.work-info-description h4 {
+    font-size: 24px;
+    padding:none;
+    width: 90%;
+    margin-left: 10%;
+    margin-bottom: -8px;
+}
+
+input {
+    display:none;
+}
+
+
+input:checked + label .work-info-description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.work-info-card[for="c1"], 
+.work-info-card[for="c2"], 
+.work-info-card[for="c3"], 
+.work-info-card[for="c4"] {
+    position: relative;
+    background:  linear-gradient(-45deg, #5c2594, #13072e);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    opacity: 0.85;
+}
+.highlight-heading{
+    font-size: 4vh;
+    margin-right: -5vw;
+    margin-left: -1vw;
+    display: flex;
+    text-align: center;
+    justify-content: flex-start;
+    color:pink;
+    font-family: "Be Vietnam Pro", sans-serif;
+font-weight: 500;
+font-style: normal;
+rotate: -90deg;
+   }
+
+   
+input:checked + label {
+    width: 50vw;
+    background: #5c2594;
+}
+@media screen and (max-width: 900px) {
+    .work-info-container {
+        flex-direction: column; /* Change direction to column */
+        justify-content: center; /* Adjust alignment */
+        align-items: center;
+    }
+
+    .work-info-card {
+        height: 8vh;
+        width: 80vw; /* Adjust card width for better fit */
+        margin: 10px 0; /* Adjust margin for spacing */
+       
+        transition: height 0.6s cubic-bezier(.28,-0.03,0,.99); /* Added height transition */
+    }
+
+    .work-info-description {
+        width: 100%; /* Adjust description width */
+        height:fit-content;
+    }
+
+    input:checked + label .work-info-description {
+        height: auto; /* Allow description height to adjust automatically */
+        
+    }
+    .work-info-card > .work-info-row > .work-info-description {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transform: translateX(30px);
+        transition-delay: .3s;
+        transition: all .3s ease, height 0.6s cubic-bezier(.28,-0.03,0,.99); /* Added height transition */
+    }
+    .work-info-description h4 {
+        font-size: 24px;
+        padding:none;
+        width: 90%;
+        margin-left: 10%;
+        margin-top: -3vh;
+    }
+    .work-info-wrapper {
+        width: 100%;
+        max-height: 100vh;
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+    .highlight-heading{
+        font-size: 4vh;
+        margin-right: 20%;
+        margin-left: 20%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        color:pink;
+        font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    rotate: 0deg;
+       }
+
+       input:checked + label {
+        height: 50vh;
+        width:80vw; /* Allow height to adjust automatically */
+        background: #5c2594;
+    }
+
+}
