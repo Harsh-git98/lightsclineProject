@@ -118,7 +118,7 @@ hr{
   }
   
 
-  @media screen  and (max-aspect-ratio: 4/3){
+  @media screen  and (max-aspect-ratio: 3/3){
     .benefit-section {
         margin-top: 5vh;
         margin-bottom: 5vh;
