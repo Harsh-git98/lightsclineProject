@@ -115,8 +115,7 @@ margin: 5%;
 
 .infovideo video {
 max-width: 100%;
-border-radius: 4vw;
-
+border-radius: 1vw
 }
 
 
@@ -125,7 +124,7 @@ border-radius: 4vw;
 
 @media screen and (max-width:980px){
     .info-rightbox-text{
-font-size: 1.5vh;
+font-size: 16px;
 font-weight: 100;
 color:#D8A8F7;
 margin-left: 2vw;
@@ -151,7 +150,7 @@ align-items: center;
     margin-top: 10px;
 }
 .info-rightbox-subheading{
-    font-size: 4vh;
+    font-size: 48px;
 }
 .infoheading{
     width:100%;
@@ -174,7 +173,7 @@ margin: 5%;
 
 .infovideo video {
 max-width: 100%;
-border-radius: 4vw;
+border-radius: 2vw;
 
 }
 
