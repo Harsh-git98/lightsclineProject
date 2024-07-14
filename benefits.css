@@ -34,8 +34,10 @@ hr{
 
 .benefits-subheading
 {
-    color: antiquewhite;
-    font-size: 24px;
+    color:#ca8af5;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 100;
+    font-size: 3.5vh;
     text-align: center;
     width:100vw;
     overflow: hidden;
@@ -56,10 +58,11 @@ hr{
     position: relative;
     width: 15vw;
     height: 30vh;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content:first baseline;
+    background: rgb(255,255,255);
+      display: flex;
+      background: rgb(255,255,255); flex-direction: column;
+
+    justify-content:flex-start;
     align-items: center;
     justify-items: flex-start;
     box-shadow: rgb(0, 0, 0) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
@@ -99,7 +102,7 @@ hr{
   
  
   .benecard h3 {
-    font-size: 3vh;
+    font-size: 2vh;
     font-weight: 900;
 
   }
@@ -142,10 +145,14 @@ hr{
         position: relative;
         width: 30vw;
         height: 40vw;
-        background-color: white;
+        background: rgb(255,255,255);
+       
         display: flex;
+       
+       
         flex-direction: column;
-        justify-content: flex-end;
+        background: rgb(255,255,255);
+        justify-content: flex-start;
         padding: 12px;
         gap: 12px;
         border-radius: 8px;
@@ -189,6 +196,7 @@ hr{
       .benecard h3 {
         font-size: 3vw;
         font-weight: 900;
+        text-align: center;
     
       }
       .benecard p {

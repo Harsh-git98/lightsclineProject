@@ -1,17 +1,97 @@
-.outerbox{
-    margin:5vw 5vw 5vw 5vw;
-    max-width: 1280px;
-border-radius: 2vw;
-min-height: 40vh;
-max-height: 90vh;
-min-width: 90vw;
-background: linear-gradient(315deg, #13072e, #5c2594);
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items: flex-start;
 
+:root {
+    --background-color: #070212;
+    --circle-color-start: #510feb;
+    --circle-color-end: #381a6d;
+  }
+  .outerbox {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    border-radius: 3vw;
+    min-height: 40vh;
+    max-height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    overflow: hidden;
 }
+
+.outerbox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--background-color);
+    background: radial-gradient(
+        circle,
+        var(--background-color),
+        var(--circle-color-start) 30%,
+        rgba(12, 2, 34, 0.226) 0%
+    ),
+    radial-gradient(
+        circle at 40px 40px,
+        var(--circle-color-start),
+        var(--circle-color-end) 30%,
+        rgba(19, 7, 46, 0) 0%
+    ),
+    radial-gradient(
+        circle at 600px 200px,
+        var(--circle-color-start),
+        var(--circle-color-end) 10%,
+        rgba(19, 7, 46, 0) 0%
+    ),
+    radial-gradient(
+        circle at 800px 100px,
+        var(--circle-color-start),
+        var(--circle-color-end) 10%,
+        rgba(19, 7, 46, 0) 0%
+    ),
+    radial-gradient(
+        circle at 700px 500px,
+        var(--circle-color-start),
+        var(--circle-color-end) 2%,
+        rgba(19, 7, 46, 0.123) 0%
+    ),
+    radial-gradient(
+        circle at 200px 400px,
+        var(--circle-color-start),
+        var(--circle-color-end) 1%,
+        rgba(19, 7, 46, 0) 0%
+    ),
+    radial-gradient(
+        circle at 300px 700px,
+        var(--circle-color-start),
+        var(--circle-color-end) 15%,
+        rgba(19, 7, 46, 0) 0%
+    ),
+    radial-gradient(
+        circle at 900px 500px,
+        var(--circle-color-start),
+        var(--circle-color-end) 20%,
+        rgba(19, 7, 46, 0) 0%
+    ),
+    radial-gradient(
+        circle at 650px 400px,
+        var(--circle-color-start),
+        var(--circle-color-end) 10%,
+        rgba(19, 7, 46, 0) 0%
+    ),
+    radial-gradient(
+        circle at 600px 600px,
+        var(--circle-color-start),
+        var(--circle-color-end) 1%,
+        rgba(19, 7, 46, 0.959) 0%
+    );
+    filter: blur(15px);
+    z-index: -1;
+}
+
+  
 
 .infoheading{
     width:100%;
@@ -22,7 +102,7 @@ color:whitesmoke;
 font-family: "Be Vietnam Pro", sans-serif;
 font-weight: 500;
 font-style: normal;
-}
+} 
 
 
 .infobox{
