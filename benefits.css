@@ -59,10 +59,13 @@ hr{
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content:first baseline;
+    align-items: center;
+    justify-items: flex-start;
+    box-shadow: rgb(0, 0, 0) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
     padding: 12px;
-    gap: 12px;
     border-radius: 8px;
+    
     cursor: pointer;
   
   }
@@ -88,20 +91,27 @@ hr{
     z-index: -1;
     position: absolute;
     inset: 0;
+    border: 3px solid black;
     background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
     transform: translate3d(0, 0, 0) scale(0.95);
    
   }
   
-  .heading {
-    font-size: 20px;
-    text-transform: capitalize;
-    font-weight: 700;
-    color: black; /* corrected from font-color to color */
+ 
+  .benecard h3 {
+    font-size: 3vh;
+    font-weight: 900;
+
   }
-  
-  .benecard p:not(.heading) {
-    font-size: 14px;
+  .benecard p {
+    margin-top: -1vh;
+    padding-left: 1vw;
+    font-size: 10px;
+    
+
+  }
+  .benecard img{
+    width:70%;
   }
   
   .benecard p:last-child {
@@ -173,6 +183,23 @@ hr{
       
       .benecard p:not(.heading) {
         font-size: 1vh;
+      }
+
+
+      .benecard h3 {
+        font-size: 3vw;
+        font-weight: 900;
+    
+      }
+      .benecard p {
+        margin-top: -1vh;
+        padding-left: 1vw;
+        font-size: 10px;
+        
+    
+      }
+      .benecard img{
+        width:50%;
       }
       
     
