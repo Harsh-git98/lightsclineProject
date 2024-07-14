@@ -1,13 +1,16 @@
 
 :root {
     --background-color: #070212;
-    --circle-color-start: #510feb;
-    --circle-color-end: #381a6d;
+    --circle-color-start: #6c10b8;
+    --circle-color-end: #2d0e63;
   }
+
+
+
+
   .outerbox {
     margin-top: 5vh;
     margin-bottom: 5vh;
-    border-radius: 3vw;
     min-height: 40vh;
     max-height: 90vh;
     width: 100vw;
@@ -28,69 +31,90 @@
     bottom: 0;
     background: var(--background-color);
     background: radial-gradient(
-        circle,
-        var(--background-color),
-        var(--circle-color-start) 30%,
-        rgba(12, 2, 34, 0.226) 0%
-    ),
-    radial-gradient(
-        circle at 40px 40px,
-        var(--circle-color-start),
-        var(--circle-color-end) 30%,
-        rgba(19, 7, 46, 0) 0%
-    ),
-    radial-gradient(
-        circle at 600px 200px,
-        var(--circle-color-start),
-        var(--circle-color-end) 10%,
-        rgba(19, 7, 46, 0) 0%
-    ),
-    radial-gradient(
-        circle at 800px 100px,
-        var(--circle-color-start),
-        var(--circle-color-end) 10%,
-        rgba(19, 7, 46, 0) 0%
-    ),
-    radial-gradient(
-        circle at 700px 500px,
-        var(--circle-color-start),
-        var(--circle-color-end) 2%,
-        rgba(19, 7, 46, 0.123) 0%
-    ),
-    radial-gradient(
-        circle at 200px 400px,
-        var(--circle-color-start),
-        var(--circle-color-end) 1%,
-        rgba(19, 7, 46, 0) 0%
-    ),
-    radial-gradient(
-        circle at 300px 700px,
-        var(--circle-color-start),
-        var(--circle-color-end) 15%,
-        rgba(19, 7, 46, 0) 0%
-    ),
-    radial-gradient(
-        circle at 900px 500px,
-        var(--circle-color-start),
-        var(--circle-color-end) 20%,
-        rgba(19, 7, 46, 0) 0%
-    ),
-    radial-gradient(
-        circle at 650px 400px,
-        var(--circle-color-start),
-        var(--circle-color-end) 10%,
-        rgba(19, 7, 46, 0) 0%
-    ),
-    radial-gradient(
-        circle at 600px 600px,
-        var(--circle-color-start),
-        var(--circle-color-end) 1%,
-        rgba(19, 7, 46, 0.959) 0%
-    );
-    filter: blur(15px);
+            circle,
+            var(--circle-color-start),
+            var(--circle-color-end) 20%,
+            rgba(12, 2, 34, 0.226) 0%
+        ),
+        radial-gradient(
+            circle at 4% 4%,
+            var(--circle-color-start),
+            var(--circle-color-end) 20%,
+            rgba(19, 7, 46, 0) 0%
+        ),
+        radial-gradient(
+            circle at 60% 10%,
+            var(--circle-color-start),
+            var(--circle-color-end) 10%,
+            rgba(19, 7, 46, 0) 0%
+        ),
+        radial-gradient(
+            circle at 80% 50%,
+            var(--circle-color-start),
+            var(--circle-color-end) 10%,
+            rgba(19, 7, 46, 0) 0%
+        ),
+        radial-gradient(
+            circle at 90% 50%,
+            var(--circle-color-start),
+            var(--circle-color-end) 2%,
+            rgba(19, 7, 46, 0.123) 0%
+        ),
+        radial-gradient(
+            circle at 20% 40%,
+            var(--circle-color-start),
+            var(--circle-color-end) 15%,
+            rgba(19, 7, 46, 0) 0%
+        ),
+        radial-gradient(
+            circle at 30% 90%,
+            var(--circle-color-start),
+            var(--circle-color-end) 15%,
+            rgba(19, 7, 46, 0) 0%
+        ),
+        radial-gradient(
+            circle at 90% 70%,
+            var(--circle-color-start),
+            var(--circle-color-end) 20%,
+            rgba(19, 7, 46, 0) 0%
+        ),
+        radial-gradient(
+            circle at 75% 40%,
+            var(--circle-color-start),
+            var(--circle-color-end) 15%,
+            rgba(19, 7, 46, 0) 0%
+        ),
+        radial-gradient(
+            circle at 100% 60%,
+            var(--circle-color-start),
+            var(--circle-color-end) 1%,
+            rgba(19, 7, 46, 0.959) 0%
+        );
+    filter: blur(10px);
+    
     z-index: -1;
+    animation: moveCircles 1s infinite alternate;
 }
-
+@keyframes moveCircles {
+    0% {
+        background-position: 0% 0%, 4% 4%, 60% 20%, 80% 10%, 70% 50%, 20% 40%, 30% 70%, 90% 50%, 65% 40%, 100% 20%;
+    }
+    20% {
+        background-position: 10% 10%, 8% 8%, 65% 25%, 85% 15%, 75% 55%, 25% 45%, 35% 75%, 95% 55%, 70% 45%, 105% 25%;
+    }
+    40% {
+        background-position: 20% 20%, 12% 12%, 70% 30%, 90% 20%, 80% 60%, 30% 50%, 40% 80%, 100% 60%, 75% 50%, 110% 30%;
+    }
+    60% {
+        background-position: 30% 30%, 16% 16%, 75% 35%, 95% 25%, 85% 65%, 35% 55%, 45% 85%, 105% 65%, 80% 55%, 115% 35%;
+    }
+    80% {
+        background-position: 40% 40%, 20% 20%, 80% 40%, 100% 30%, 90% 70%, 40% 60%, 50% 90%, 110% 70%, 85% 60%, 120% 40%;
+    }
+    100% {
+        background-position: 50% 50%, 24% 24%, 85% 45%, 105% 35%, 95% 75%, 45% 65%, 55% 95%, 115% 75%, 90% 65%, 125% 45%;
+    }
+}
   
 
 .infoheading{
