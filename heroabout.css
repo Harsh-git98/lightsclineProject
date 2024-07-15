@@ -6,7 +6,7 @@
 .hero-box{
     margin:12vh 5vw 5vw 5vw;
     border-radius: 2vw;
-    min-height: 60vh;
+    min-height: 40vh;
     max-height: 90vh;
     min-width: 90vw;
     
@@ -26,7 +26,8 @@
 
 }
 .right-box img{
-    width:100%;
+    width:80%;
+    margin-top: -2vh;
    
 }
 
@@ -77,7 +78,7 @@ white-space: nowrap;
     
     .hero-box{
         margin:12vh 5vw 5vw 5vw;
-        min-height: 70vh;
+        min-height: 40vh;
         max-height: 90vh;
         min-width: 90vw;
         display: flex;
