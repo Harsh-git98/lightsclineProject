@@ -9,7 +9,7 @@ var staticYpos;
 
 
 var opt = {
-  shapecolor: "#D8A8F7",
+  shapecolor: "#ae81ff",
   radius: 2,
   distance: 200,
   circleopacity: 1,

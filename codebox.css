@@ -71,7 +71,7 @@
 .text {
     width: 0;
     white-space: nowrap;
-    font-size: 2vh;
+    font-size: 1.5vw;
     overflow: hidden;
     border-right: .15em solid #000000; /* Adding a border for the cursor effect */
     animation: 
@@ -151,7 +151,7 @@
      
               position: absolute;
               margin-top: 10vh;
-              width: 80vw;
+              width: 100vw;
               max-height: 80vh;
               background: transparent;
               overflow: hidden;
@@ -166,7 +166,7 @@
   
           #codebox .image-box {
               
-              min-width: 50vw;
+              min-width: 40vw;
           }
   
           #codebox .text-box {
@@ -192,11 +192,25 @@
         overflow: hidden;
         z-index: 20;
         display: flex;
+        gap:5vh;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-items: center;
+        align-content: space-evenly;
       
     }
+    
+.text {
+    width: 0;
+    white-space: nowrap;
+    font-size: 1.2vh;
+    overflow: hidden;
+    border-right: .15em solid #000000; /* Adding a border for the cursor effect */
+    animation: 
+        typing 2s steps(40) forwards,
+        cursor .1s step-end 2s;
+    animation-fill-mode: forwards; /* Ensure the final state is maintained */
+}
+
 
 
     
