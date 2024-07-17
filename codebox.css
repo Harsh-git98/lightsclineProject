@@ -1,0 +1,304 @@
+.codebox-container {
+    display: inline-block;
+    background-color: transparent;
+    border: 3px solid #272822;
+    border-radius: 10px;
+    padding: 10px;
+    height: 100%;
+    min-width: 90%;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.title-bar {
+    background-color: #1c1c1c;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-bar .buttons {
+    display: flex;
+}
+
+.title-bar .button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.title-bar .close {
+    background-color: #ff5f56;
+}
+
+.title-bar .minimize {
+    background-color: #ffbd2e;
+}
+
+.title-bar .maximize {
+    background-color: #27c93f;
+}
+
+.title-bar .title {
+    color: #c0c0c0;
+    font-size: 12px;
+}
+.copy-button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.copy-button::after {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.text {
+    width: 0;
+    white-space: nowrap;
+    font-size: 2vh;
+    overflow: hidden;
+    border-right: .15em solid #000000; /* Adding a border for the cursor effect */
+    animation: 
+        typing 2s steps(40) forwards,
+        cursor .1s step-end 2s;
+    animation-fill-mode: forwards; /* Ensure the final state is maintained */
+}
+
+
+
+
+
+/* 
+        
+@keyframes rotate {
+    from {
+      rotate: 0deg;
+    }
+    
+    50% {
+      scale: 1 1.5;
+    }
+    
+    to {
+      rotate: 360deg;
+    }
+  }
+  .codebox{
+      min-height: 50vh;
+      overflow: hidden;
+      position: relative;
+
+      
+  }
+  
+  #blob {
+    background-color: white;
+    height: 44vh;
+    aspect-ratio: 1;
+    
+   
+    translate: -50% -50%;
+    border-radius: 50%;
+    background: linear-gradient(to right, #0c0222, rgb(64, 14, 165));
+    animation: rotate 20s infinite;
+    opacity: 0.99;
+    filter: blur(25px);
+    
+    z-index: 1;
+  }
+   */
+
+
+
+
+
+   canvas {
+    width: 100%;
+    max-height: 80vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  canvas {
+    display: block;
+    color: white;
+    position:static;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    filter: blur(2px);
+  }
+  
+  
+  
+   #codebox {
+     
+              position: absolute;
+              margin-top: 10vh;
+              width: 80vw;
+              max-height: 80vh;
+              background: transparent;
+              overflow: hidden;
+              z-index: 20;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-evenly;
+              align-items: center;
+            
+          }
+
+  
+          #codebox .image-box {
+              
+              min-width: 50vw;
+          }
+  
+          #codebox .text-box {
+              height: 40%;
+              background: transparent;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+          }
+
+
+
+
+@media screen and (max-aspect-ratio:2/2){
+    #codebox {
+     
+        position: absolute;
+        margin-top: 3vh;
+        width: 100vw;
+        max-height: 80vh;
+        background: transparent;
+        overflow: hidden;
+        z-index: 20;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
+    }
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+.keyword {
+    color: #66d9ef;
+}
+
+.import {
+    color: #f92672;
+}
+
+.module {
+    color: #a6e22e;
+}
+
+.comment {
+    color: #1fd0dd;
+}
+
+.function {
+    color: #e6db74;
+}
+
+.variable {
+    color: #f8f8f2;
+}
+
+.value {
+    color: #ae81ff;
+}
+
+@keyframes cursor {
+    0% {
+        border-color: white;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+       
+    }
+}
+
+.line1 {
+    animation-delay: 0s, 0s;
+    animation-duration: 2s; /* no delay for the first line */
+}
+.line2 {
+    animation-delay: 2s, 2s;
+    animation-duration: 2s; /* delay of 3 seconds for the second line */
+}
+.line3 {
+    animation-delay: 4s, 4s;
+    animation-duration: 2s; /* delay of 6 seconds for the third line */
+}
+.line4 {
+    animation-delay: 6s, 6s;
+    animation-duration: 2s; /* delay of 9 seconds for the fourth line */
+}
+.line5 {
+    animation-delay: 8s, 8s;
+    animation-duration: 2s; /* delay of 12 seconds for the fifth line */
+}
+.line6 {
+    animation-delay: 10s, 10s;
+    animation-duration: 2s; /* delay of 15 seconds for the sixth line */
+}
+.line7 {
+    animation-delay: 12s, 12s;
+    animation-duration: 2s; /* delay of 18 seconds for the seventh line */
+}
+.line8 {
+    animation-delay: 14s, 14s;
+    animation-duration: 2s; /* delay of 21 seconds for the eighth line */
+}
+.line9 {
+    animation-delay: 16s, 16s;
+    animation-duration: 2s; /* delay of 24 seconds for the ninth line */
+}
+
+

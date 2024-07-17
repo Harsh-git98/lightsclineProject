@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="workinfo.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="benefits.css">
+    <link rel="stylesheet" href="codebox.css">
+
+    
 
     
     <style>
@@ -51,44 +54,10 @@
 
 
 
+
     </style>
 
     <style>
-
-        
-@keyframes rotate {
-  from {
-    rotate: 0deg;
-  }
-  
-  50% {
-    scale: 1 1.5;
-  }
-  
-  to {
-    rotate: 360deg;
-  }
-}
-.codebox{
-    min-height: 50vh;
-    overflow: hidden;
-    filter: blur(25px);
-}
-
-#blob {
-  background-color: white;
-  height: 34vmax;
-  aspect-ratio: 1;
-  position: relative;
- 
-  translate: -50% -50%;
-  border-radius: 50%;
-  background: linear-gradient(to right, #0c0222, rgb(64, 14, 165));
-  animation: rotate 20s infinite;
-  opacity: 0.8;
-  
-  z-index: -1;
-}
 
 
 
@@ -212,98 +181,56 @@
 
 </div>
 
-<!-- 
-<div class="card">
-    <div class="align">
-        <span class="red"></span>
-        <span class="yellow"></span>
-        <span class="green"></span>
+
+<div id="codebox">
+    <div class="image-box">
+        <div class="codebox-container">
+            <div class="title-bar">
+                <div class="buttons">
+                    <div class="button close"></div>
+                    <div class="button minimize"></div>
+                    <div class="button maximize"></div>
+                </div>
+                <div class="title"><button class="copy-button" type="button">Copy</button></div>
+            </div>
+            <div class="upper-pane"></div>
+            <p class="text line1"><span class="import">from</span> <span class="module">lightscline.lightscline</span> <span class="import">import</span> <span class="module">LightsclineEdge</span></p>
+            <p class="text line2"><span class="comment">## Load data into Lightscline</span></p>
+            <p class="text line3"><span class="variable">ls</span> <span class="keyword">=</span> <span class="module">Lightscline</span>(<span class="variable">data</span><span class="keyword">=</span><span class="variable">data</span>, <span class="variable">fs</span> <span class="keyword">=</span> <span class="variable">SAMPLING_FREQUENCY</span>)</p>
+            <p class="text line4"><span class="comment">## Reduce the amount of data by 90% of the original</span></p>
+            <p class="text line5"><span class="variable">ls</span>.<span class="function">reduce_and_preprocess_data</span>(<span class="variable">per_reduction</span><span class="keyword">=</span><span class="value">90</span>)</p>
+            <p class="text line6"><span class="comment">## Train the model</span></p>
+            <p class="text line7"><span class="variable">ls</span>.<span class="function">train_model</span>(<span class="variable">verbose</span><span class="keyword">=</span><span class="value">True</span>, <span class="variable">n_iters</span> <span class="keyword">=</span> <span class="value">1000</span>)</p>
+            <p class="text line8"><span class="comment">## checking the results</span></p>
+            <p class="text line9"><span class="variable">ls</span>.<span class="function">test_model</span>()</p>
+        </div>
     </div>
-
-    
-    <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde explicabo enim rem odio assumenda?
-    </p>
-</div> -->
-
-
-
-
-
-<!-- 
-
-<div class="work-info-wrapper">
-    <div class="highlight-heading">
-        Highlights
-    </div>
-    <div class="work-info-container">
-        <input type="radio" name="slide" id="c1" checked>
-        <label for="c1" class="work-info-card">
-            <div class="work-info-row">
-                <div class="work-info-icon">1</div>
-                <div class="work-info-description">
-                    <h4>🚀 Effortless Integration with API
-                    </h4>
-                    <p>Our state-of-the-art API, embedded within the SDK, abstracts the complexities of functional code. Focus on your objectives while we handle the technical intricacies, ensuring a seamless user experience.
-                    </p>
-                </div>
-            </div>
-        </label>
-        <input type="radio" name="slide" id="c2">
-        <label for="c2" class="work-info-card">
-            <div class="work-info-row">
-                <div class="work-info-icon">2</div>
-                <div class="work-info-description">
-                    <h4>💡 Versatile COTS Software
-                    </h4>
-                    <p>Our Commercial Off-The-Shelf (COTS) software is engineered for versatility and ease of integration. Enjoy unparalleled flexibility across diverse applications, designed to fit your unique needs.
-                    </p>
-                </div>
-            </div>
-        </label>
-        <input type="radio" name="slide" id="c3">
-        <label for="c3" class="work-info-card">
-            <div class="work-info-row">
-                <div class="work-info-icon">3</div>
-                <div class="work-info-description">
-                    <h4>🔄 Adaptive Hardware Support
-                    </h4>
-                    <p>Our software's loosely coupled architecture effortlessly adapts to heterogeneous hardware environments. As your hardware evolves, our software remains stable and reliable, requiring minimal adjustments.
-                    </p>
-                </div>
-            </div>
-        </label>
-        <input type="radio" name="slide" id="c4">
-        <label for="c4" class="work-info-card">
-            <div class="work-info-row">
-                <div class="work-info-icon">4</div>
-                <div class="work-info-description">
-                    <h4>🔒 Uncompromising Security with Zero Trust
-                    </h4>
-                    <p>Operate in a zero-trust environment where security is paramount. All analyses are conducted internally, without external internet dependencies. Only detected anomalies are communicated outside, ensuring your data remains secure</p>
-                </div>
-            </div>
-        </label>
-    </div>
-</div>
-
- -->
-
-
-
-
-<div class="codebox">
-    <div id="blob"></div>
-    <div id="blur"></div>
-    <div class="codebox-outerbox">
-        <div class="codebox-leftbox">
+    <div class="text-box">
+        <div class="info-rightbox-subheading">
+            JUST 4 Lines?
 
         </div>
-        <div class="codebox-rightbox">
-
+        <div class="info-rightbox-text">
+            Our AI uses 4 lines of code to redefine
+            <br>the 1940s Nyquist theorem for scientific computing
+            
+        </div>
+        <div class="info-rightbox-text">
+            NO SECURITY THREATS
+            <br>
+            NO DATA BREACHES
+            <br>
+            100% ADAPATABILITY
+            <br>
+            APPLICABLE TO ANY HARDWARE
         </div>
     </div>
 </div>
+<canvas id="canvas"></canvas>
+
+<!--left click add shapes-->
+<!--right click remove shapes-->
+
 
 
 
@@ -471,6 +398,128 @@
 
 
 
+<!-- 
+<div class="card">
+    <div class="align">
+        <span class="red"></span>
+        <span class="yellow"></span>
+        <span class="green"></span>
+    </div>
+
+    
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde explicabo enim rem odio assumenda?
+    </p>
+</div> -->
+
+
+<!-- 
+
+
+<div id="blob"></div>
+<div id="blur"></div>
+<div class="infopage">
+   
+    <div class="infobox">
+        <div class="infobox-leftbox">
+            <div class="codebox-container">
+                <div class="title-bar">
+                    <div class="buttons">
+                        <div class="button close"></div>
+                        <div class="button minimize"></div>
+                        <div class="button maximize"></div>
+                    </div>
+                    <div class="title"><button class="copy-button" type="button">Copy</button></div>
+                </div>
+                <div class="upper-pane"></div>
+                <p class="text line1"><span class="import">from</span> <span class="module">lightscline.lightscline</span> <span class="import">import</span> <span class="module">LightsclineEdge</span></p>
+                <p class="text line2"><span class="comment">## Load data into Lightscline</span></p>
+                <p class="text line3"><span class="variable">ls</span> <span class="keyword">=</span> <span class="module">Lightscline</span>(<span class="variable">data</span><span class="keyword">=</span><span class="variable">data</span>, <span class="variable">fs</span> <span class="keyword">=</span> <span class="variable">SAMPLING_FREQUENCY</span>)</p>
+                <p class="text line4"><span class="comment">## Reduce the amount of data by 90% of the original</span></p>
+                <p class="text line5"><span class="variable">ls</span>.<span class="function">reduce_and_preprocess_data</span>(<span class="variable">per_reduction</span><span class="keyword">=</span><span class="value">90</span>)</p>
+                <p class="text line6"><span class="comment">## Train the model</span></p>
+                <p class="text line7"><span class="variable">ls</span>.<span class="function">train_model</span>(<span class="variable">verbose</span><span class="keyword">=</span><span class="value">True</span>, <span class="variable">n_iters</span> <span class="keyword">=</span> <span class="value">1000</span>)</p>
+                <p class="text line8"><span class="comment">## checking the results</span></p>
+                <p class="text line9"><span class="variable">ls</span>.<span class="function">test_model</span>()</p>
+            </div>
+
+        </div>
+        <div class="infobox-rightbox">
+            <div class="info-rightbox-subheading">
+                WE Solve
+
+            </div>
+            <div class="info-rightbox-text">
+                At Lightscline, we tackle the challenge of managing terabytes of data generated by dual-use applications like satellites, drones, and industrial assets. Our lightweight AI automatically identifies the 10% of high-value data, enabling customers to reduce 90% of their sensor data infrastructure and human time costs. With just 4 lines of code, setup in 10 minutes, Lightscline AI leverages real-time predictions to focus on the most critical data, streamlining operations and maximizing efficiency. Join us in transforming sensor data analytics and achieving significant cost reductions.
+            </div>
+            <div >
+                <a class="info-rightbox-button" href="#">MORE -></a>
+
+            </div>
+
+        </div>
+    </div>
+</div> -->
+
+
+<!-- 
+
+<div class="work-info-wrapper">
+    <div class="highlight-heading">
+        Highlights
+    </div>
+    <div class="work-info-container">
+        <input type="radio" name="slide" id="c1" checked>
+        <label for="c1" class="work-info-card">
+            <div class="work-info-row">
+                <div class="work-info-icon">1</div>
+                <div class="work-info-description">
+                    <h4>🚀 Effortless Integration with API
+                    </h4>
+                    <p>Our state-of-the-art API, embedded within the SDK, abstracts the complexities of functional code. Focus on your objectives while we handle the technical intricacies, ensuring a seamless user experience.
+                    </p>
+                </div>
+            </div>
+        </label>
+        <input type="radio" name="slide" id="c2">
+        <label for="c2" class="work-info-card">
+            <div class="work-info-row">
+                <div class="work-info-icon">2</div>
+                <div class="work-info-description">
+                    <h4>💡 Versatile COTS Software
+                    </h4>
+                    <p>Our Commercial Off-The-Shelf (COTS) software is engineered for versatility and ease of integration. Enjoy unparalleled flexibility across diverse applications, designed to fit your unique needs.
+                    </p>
+                </div>
+            </div>
+        </label>
+        <input type="radio" name="slide" id="c3">
+        <label for="c3" class="work-info-card">
+            <div class="work-info-row">
+                <div class="work-info-icon">3</div>
+                <div class="work-info-description">
+                    <h4>🔄 Adaptive Hardware Support
+                    </h4>
+                    <p>Our software's loosely coupled architecture effortlessly adapts to heterogeneous hardware environments. As your hardware evolves, our software remains stable and reliable, requiring minimal adjustments.
+                    </p>
+                </div>
+            </div>
+        </label>
+        <input type="radio" name="slide" id="c4">
+        <label for="c4" class="work-info-card">
+            <div class="work-info-row">
+                <div class="work-info-icon">4</div>
+                <div class="work-info-description">
+                    <h4>🔒 Uncompromising Security with Zero Trust
+                    </h4>
+                    <p>Operate in a zero-trust environment where security is paramount. All analyses are conducted internally, without external internet dependencies. Only detected anomalies are communicated outside, ensuring your data remains secure</p>
+                </div>
+            </div>
+        </label>
+    </div>
+</div>
+
+ -->
 
 
 
@@ -485,6 +534,8 @@
 <!-- Jquery needed -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="nav.js"></script>
+    <script src="codebox.js"></script>
+    
 
 <!-- Function used to shrink nav bar removing paddings and adding black background -->
     <script>
@@ -502,6 +553,7 @@ window.onpointermove = event => {
 }
 
 /* -- Text effect -- */
+
 
 
     </script>
