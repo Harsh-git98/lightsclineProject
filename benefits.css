@@ -57,7 +57,7 @@ hr{
   .benecard {
     position: relative;
     width: 15vw;
-    height: 30vh;
+    height: 40vh;
     background: rgb(255,255,255);
       display: flex;
       background: rgb(255,255,255); flex-direction: column;
@@ -80,7 +80,7 @@ hr{
     left: -5px;
     margin: auto;
     width: 15vw;
-    height: 30vh;
+    height: 40vh;
     border-radius: 10px;
     background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
     z-index: -10;
