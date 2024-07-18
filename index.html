@@ -291,6 +291,10 @@
 
 
 <style>
+    .white{
+        position: relative;
+        min-height: 80vh;
+    }
     .white-container{
         width:90vw;
         margin-left: 5vw;
@@ -298,16 +302,28 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        margin-bottom: 10vh;
 
     }
     .social-box img{
-        width:10px;
+        width:5vw;
     }
     .linksbox{
-        min-height: 80px;
-        min-width:60px;
+        min-height: 60vh;
+        min-width:50vw;
         background-color: #0c0222;
+        border-radius: 10vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+    .linksbox a{
+        color: aliceblue;
+        font-size: 10vh;
+
+    }
+    
 
 
         
@@ -337,12 +353,15 @@
     <div class="white-box-right">
         <div class="linksbox">
             <div class="first-link">
+                <a href="#"> BOOK DEMO</a>
 
             </div>
             <div class="second-link">
+                <a> BOOK DEMO</a>
 
             </div>
             <div class="third-link">
+                <a> BOOK DEMO</a>
 
             </div>
 
@@ -629,19 +648,6 @@ document.addEventListener('click', function (e) {
 
 
 
-$(document).ready(function() {
-    $('.resources-hover').click(function(event) {
-        event.preventDefault(); // Prevent the default link behavior
-        $('.resources-box').toggle(); // Toggle the display of the resources box
-    });
-
-    // Optional: Hide the resources box if clicking outside of it
-    $(document).click(function(event) {
-        if (!$(event.target).closest('.resources').length) {
-            $('.resources-box').hide();
-        }
-    });
-});
 
 </script>
     

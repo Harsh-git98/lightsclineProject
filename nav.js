@@ -20,3 +20,16 @@ $(window).scroll(function() {
    
 });
 
+$(document).ready(function() {
+    $('.resources-hover').click(function(event) {
+        event.preventDefault(); // Prevent the default link behavior
+        $('.resources-box').toggle(); // Toggle the display of the resources box
+    });
+
+    // Optional: Hide the resources box if clicking outside of it
+    $(document).click(function(event) {
+        if (!$(event.target).closest('.resources').length) {
+            $('.resources-box').hide();
+        }
+    });
+});
