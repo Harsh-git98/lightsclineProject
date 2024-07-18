@@ -310,20 +310,63 @@
     }
     .linksbox{
         min-height: 60vh;
-        min-width:50vw;
+        min-width:40vw;
         background-color: #0c0222;
-        border-radius: 10vh;
+        border-radius: 20px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
     }
     .linksbox a{
+        text-decoration: none;
         color: aliceblue;
-        font-size: 10vh;
+        font-size: 4vh;
 
     }
-    
+
+    .linksbox img{
+        height: 4vh;
+    }
+    .header-box{
+        background-color: #0c0222;
+        color: aliceblue;
+        font-size: 7vh;
+        border-radius: 20px;
+        padding:2vh 2vh 2vh 2vh;
+    }
+    .white-box-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        column-gap: 5vh;
+        row-gap: 5vh;
+    }
+    .social-box{
+        display: flex;
+        flex-direction: row;
+        align-content: space-around;
+        align-items: center;
+        justify-items: center;
+        column-gap: 3vw;
+    }
+
+    @media screen and (max-aspect-ratio:1/1){
+        .white-container{
+        width:90vw;
+        margin-left: 5vw;
+        min-height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 10vh;
+
+    }
+
+        
+    }
 
 
         
@@ -339,10 +382,12 @@
 
         </div>
         <div class="social-box">
-            <a><img src="10xcost.png" alt=""></a>
-            <a><img src="10xcost.png" alt=""></a>
-            <a><img src="10xcost.png" alt=""></a>
-            <a><img src="10xcost.png" alt=""></a>
+           
+           
+            <a><img src="/img/gmail.svg" alt=""></a>
+            <a><img src="/img/youtube.svg" alt=""></a>
+            <a><img src="/img/linkdin.svg" alt=""></a>
+            <a><img src="/img/twitter.svg" alt=""></a>
 
         </div>
 
@@ -353,15 +398,18 @@
     <div class="white-box-right">
         <div class="linksbox">
             <div class="first-link">
+                <img src="" alt="">
                 <a href="#"> BOOK DEMO</a>
 
             </div>
             <div class="second-link">
-                <a> BOOK DEMO</a>
+                <a href="#"> Book A Meet</a>
+                <img src="" alt="">
 
             </div>
             <div class="third-link">
-                <a> BOOK DEMO</a>
+                <a href="#"> Examples </a>
+                <img src="" alt="">
 
             </div>
 
