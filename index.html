@@ -64,6 +64,7 @@
 
 
     </style>
+   
 </head>
 <body>
 
@@ -281,14 +282,68 @@
   
 </div>
 
+
+<style>
+    .white-container{
+        width:90vw;
+        margin-left: 5vw;
+        min-height: 60vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+    .social-box img{
+        width:10px;
+    }
+    .linksbox{
+        min-height: 80px;
+        min-width:60px;
+        background-color: #0c0222;
+    }
+
+
+        
+</style>
 <div class="white">
 
+    <div class="white-container">
+
+
     <div class="white-box-left">
+        <div class="header-box">
+            GET STARTED
+
+        </div>
+        <div class="social-box">
+            <a><img src="10xcost.png" alt=""></a>
+            <a><img src="10xcost.png" alt=""></a>
+            <a><img src="10xcost.png" alt=""></a>
+            <a><img src="10xcost.png" alt=""></a>
+
+        </div>
+
+
 
     </div>
+    
     <div class="white-box-right">
+        <div class="linksbox">
+            <div class="first-link">
+
+            </div>
+            <div class="second-link">
+
+            </div>
+            <div class="third-link">
+
+            </div>
+
+        </div>
 
     </div>
+</div>
+
 
 </div>
 
@@ -543,24 +598,29 @@
 
 <!-- Function used to shrink nav bar removing paddings and adding black background -->
     <script>
-        /* -- Glow effect -- */
 
-const blob = document.getElementById("blob");
-
-window.onpointermove = event => { 
-  const { clientX, clientY } = event;
-  
-  blob.animate({
-    left: `${clientX}px`,
-    top: `${clientY}px`
-  }, { duration: 3000, fill: "forwards" });
-}
-
-/* -- Text effect -- */
 
 
 
     </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+var dropdownList = document.querySelector('.dropdown-list');
+
+resourcesLink.addEventListener('click', function (e) {
+    e.preventDefault();
+    dropdownList.style.display = dropdownList.style.display === 'block' ? 'none' : 'block';
+});
+
+document.addEventListener('click', function (e) {
+    if (!resourcesLink.contains(e.target) && !dropdownList.contains(e.target)) {
+        dropdownList.style.display = 'none';
+    }
+});
+});
+
+</script>
     
 </body>
 </html>
