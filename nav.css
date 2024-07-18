@@ -55,6 +55,7 @@ body {
     gap:4vw;
 }
 
+
 .nav div.main_list {
     height: 11vh;
     float: right;
@@ -84,7 +85,7 @@ body {
 .nav div.main_list ul li a {
     text-decoration: none;
     color: #fff;
-    line-height: 10vh;
+   
 
     font-size: 2.5em;
 }
@@ -120,6 +121,14 @@ color: #D8A8F7;
     padding-right: 10%;
 
 }
+#resources-button{
+    background-color: #13072E;
+    color: #D8A8F7;
+    border-radius: 10vw;
+    padding-left: 10%;
+    padding-right: 10%;
+    width:100%;
+}
 .logo
 {
     display: flex;
@@ -137,35 +146,43 @@ font-size: 4vh;
 color: #D8A8F7;
 }
 
-.dropdown-list {
+
+/* Hide the resources box by default */
+.resources-box {
     display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    z-index: 1000;
+    position: absolute; /* Ensure it doesn't disrupt the layout */
+    background-color: transparent; /* Adjust background color as needed */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add some shadow for better visibility */
+    padding: 10px; /* Add some padding for better aesthetics */
+    border-radius: 5px; /* Optional: add rounded corners */
+    z-index: 100000; /* Ensure it's above other elements */
+    min-height: 10vh;
+    margin-top: -5vh;
+}
+.resources-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap:1vh;
+    margin-top: 1vh;
+
+    min-height: 30vh;
 }
 
-.dropdown-list li {
-    margin: 0;
-}
-
-.dropdown-list li a {
-    padding: 10px 15px;
-    white-space: nowrap;
-}
-
-nav ul li:hover > a {
-    background-color: #eee;
-}
-
-nav ul li:hover .dropdown-list {
+/* Show the resources box when hovering over the resources link */
+.resources:hover .resources-box {
     display: block;
 }
 
 
+
+
+.resources-link a{
+    all:unset;
+    line-height: 4vh;
+    font-size: 1em;
+}
 
 
 .navTrigger {
@@ -268,9 +285,58 @@ font-size: 4vh;
         font-size: 3rem;
         
     }
-    .nav div.media_button {
-        
-    }
+    
+/* Hide the resources box by default */
+.resources-box {
+    display: none;
+    position: absolute; /* Ensure it doesn't disrupt the layout */
+    top:20vh;
+    left:5vw;
+    background-color: transparent; /* Adjust background color as needed */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add some shadow for better visibility */
+    border-radius: 5px; /* Optional: add rounded corners */
+    z-index: 100000; /* Ensure it's above other elements */
+   
+
+}
+.resources-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:1vh;
+    min-height: 30vh;
+}
+
+/* Show the resources box when hovering over the resources link */
+.resources:hover .resources-box {
+    display: block;
+}
+#resources-button{
+    background-color: #D8A8F7;
+    color: #13072E;
+    border-radius: 10vw;
+    padding-left: 10%;
+    padding-right: 10%;
+    width:100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.resources-link{
+    font-size: 1vh;
+    max-height: 4vh;
+    line-height: 1.2vh;
+    max-height: 2vh;
+}
+
+.resources-link a{
+    font-size: 1vh;
+    line-height: 1.2vh;
+    max-height: 5vh;
+}
+
+
 }
 
 

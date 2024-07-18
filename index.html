@@ -78,13 +78,19 @@
                 <ul class="navlinks">
                     <li><a href="#">Home</a></li>
                     <li><a href="/about.html">About</a></li>
-                    <li><a href="#">Resources</a>
+                    <li class="resources"><a class="resources-hover">Resources</a>
 
-                        <ul class="dropdown-list">
-                            <li><a href="#">Brochure</a></li>
-                            <li><a href="#">WhitePaper</a></li>
-                            <li><a href="#">Youtube</a></li>
-                        </ul>      
+
+                        <div class="resources-box">
+                            <div class="resources-link">
+                               <a href="#"id="resources-button">WhitePaper&#x2192;</a>
+                                <a href="#"id="resources-button">Brochure&#x2192;</a>
+                               <a href="#" id="resources-button">Customer deck&#x2192;</a>
+                            </div>
+                        </div>
+                       
+
+     
                     </li>
                     <li ><a href="#" id="Demo-navbar">Demo&#x2192;</a></li>
                 </ul>
@@ -97,6 +103,7 @@
             </span>
         
     </nav>
+   
    
 
 
@@ -618,6 +625,22 @@ document.addEventListener('click', function (e) {
         dropdownList.style.display = 'none';
     }
 });
+});
+
+
+
+$(document).ready(function() {
+    $('.resources-hover').click(function(event) {
+        event.preventDefault(); // Prevent the default link behavior
+        $('.resources-box').toggle(); // Toggle the display of the resources box
+    });
+
+    // Optional: Hide the resources box if clicking outside of it
+    $(document).click(function(event) {
+        if (!$(event.target).closest('.resources').length) {
+            $('.resources-box').hide();
+        }
+    });
 });
 
 </script>
