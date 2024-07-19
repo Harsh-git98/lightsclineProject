@@ -1,4 +1,4 @@
-
+/* 
 .work-info-wrapper {
     width: 100%;
     max-height: 100vh;
@@ -133,7 +133,9 @@ rotate: -90deg;
 input:checked + label {
     width: 50vw;
     background: #5c2594;
-}
+} */
+
+
 @media screen and (max-width: 900px) {
     .work-info-container {
         flex-direction: column; /* Change direction to column */
