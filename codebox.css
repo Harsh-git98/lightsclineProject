@@ -1,7 +1,7 @@
 .codebox-container {
     display: inline-block;
     background-color: transparent;
-    border: 3px solid #272822;
+    border: 3px solid #0b0419;
     border-radius: 10px;
     padding: 10px;
     height: 100%;
@@ -12,10 +12,11 @@
     font-family: 'Courier New', Courier, monospace;
     position: relative;
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
 }
 
 .title-bar {
-    background-color: #1c1c1c;
+    background-color: transparent;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     padding: 5px;
@@ -52,7 +53,7 @@
     font-size: 12px;
 }
 .copy-button {
-    background-color: #444;
+    background-color: #0b0419;
     color: white;
     border: none;
     padding: 5px 10px;
@@ -60,7 +61,7 @@
     border-radius: 5px;
 }
 .copy-button::after {
-    background-color: #444;
+    background-color: #490bc4;
     color: white;
     border: none;
     padding: 5px 10px;
@@ -204,7 +205,7 @@
     white-space: nowrap;
     font-size: 1.2vh;
     overflow: hidden;
-    border-right: .15em solid #000000; /* Adding a border for the cursor effect */
+    border-right: .15em solid #0b0419; /* Adding a border for the cursor effect */
     animation: 
         typing 2s steps(40) forwards,
         cursor .1s step-end 2s;
@@ -315,4 +316,23 @@
     animation-duration: 2s; /* delay of 24 seconds for the ninth line */
 }
 
+/* General styles */
+.line4-text-box {
+    padding: 2vh 2vw;
+    text-align: center;
+    z-index: 2000;
+}
 
+.line4-info-rightbox-subheading {
+    font-size: 6vh;
+    font-weight: 50;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #9966f8;
+    margin-bottom: 2vh;
+}
+
+.line4-info-rightbox-text {
+    font-size: 2vh;
+    color: #f8f8f2;
+    margin-bottom: 2vh;
+}

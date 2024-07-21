@@ -5,6 +5,7 @@
     justify-content: space-evenly; /* Centers content horizontally */
     align-items: center; /* Centers content vertically */
     align-content: space-evenly;
+    margin-bottom: 10vh;
 }
 
 
@@ -123,3 +124,18 @@
     opacity: 1;
     transform: translate(-50%, -130%);
   }
+
+
+  
+@media (max-aspect-ratio: 1/1) {
+  .ceo-info {
+    width: 100vw; /* or 100% */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    align-content: space-evenly;
+    gap: 3vh;
+
+}
+}

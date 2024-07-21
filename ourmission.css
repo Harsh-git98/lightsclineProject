@@ -1,0 +1,64 @@
+
+.mission-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    animation: fadeIn 2s ease-in;
+}
+
+.mission-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.mission-content h1 {
+    font-size: 5.5em;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+
+.mission-content p {
+    font-size: 2vh;
+    line-height: 1.6;
+    color: #805ad5;
+}
+
+.mission-collage {
+    display: grid;
+    gap: 10px;
+    flex: 1;
+    padding: 20px;
+}
+
+.mission-grid-item {
+    background-color: transparent;
+    animation: fadeIn 2s ease-in;
+    max-width: 50vw;
+}
+.mission-grid-item img{
+    max-width: 50vw;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-aspect-ratio: 1/1) {
+    .mission-container {
+        flex-direction: column;
+    }
+
+
+    .mission-grid-item img{
+        max-width: 60vw;
+    }
+}

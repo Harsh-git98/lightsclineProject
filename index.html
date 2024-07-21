@@ -23,6 +23,9 @@
     <link rel="stylesheet" href="getstarted.css">
 
     
+    <link rel="stylesheet" href="popup.css">
+
+    
 
     
     <style>
@@ -105,143 +108,21 @@
     <style>
 
 
-
-.popup-form {
-        display: none; /* Hidden by default */
-        position: fixed;
-        z-index: 10000;
-        left: 20vw;
-        top: 10vh;
-        min-width:80vw;
-        height: 50vh;
-        min-height: 10vh;
-        min-width: 20vw;
-        background-color: #0c0222;
-        filter: opacity(1);
-    }
-
-    .popup-content {
-        background-color: #fff;
-        margin: 5vh 5vw;
-        padding: 2vh 2vw;
-        border-radius: 2vh;
-        width: 90%;
-        height: 90%;
-        text-align: left;
-        box-shadow: 0 0 1vh rgba(0, 0, 0, 0.2);
-    }
-
-    .close {
-        color: #aaa;
-        float: right;
-        font-size: 5vh;
-        font-weight: bold;
-        cursor: pointer;
-    }
-
-    .close:hover,
-    .close:focus {
-        color: black;
-        text-decoration: none;
-    }
-
-    .form-heading {
-        font-size: 3vh;
-        text-align: center;
-        margin-bottom: 2vh;
-    }
-
-    .main-form {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .group {
-        position: relative;
-        margin-bottom: 2vh;
-    }
-
-    .main-form input,
-    .main-form textarea {
-        padding: 1vh;
-        border-radius: 1vh;
-        border: 2px solid rgba(0, 0, 0, 0.2);
-        outline: none;
-        width: 100%;
-        background-color: transparent;
-        font-size: 2vh;
-    }
-
-    .main-form label {
-        font-size: 2vh;
-        color: rgb(99, 102, 102);
-        position: absolute;
-        top: -2vh;
-        left: 1vh;
-        background-color: #D8A8F7;
-        padding: 0 0.5vh;
-        transition: all 0.3s ease;
-    }
-
-    .main-form input:placeholder-shown + label,
-    .main-form textarea:placeholder-shown + label {
-        top: 1vh;
-        background-color: transparent;
-    }
-
-    .main-form input:focus,
-    .main-form textarea:focus {
-        border-color: #3366cc;
-    }
-
-    .main-form input:focus + label,
-    .main-form textarea:focus + label {
-        top: -2vh;
-        left: 1vh;
-        background-color: #fff;
-        color: #3366cc;
-        font-weight: 600;
-        font-size: 2vh;
-    }
-
-    .main-form textarea {
-        resize: none;
-        height: 20vh;
-    }
-
-    .main-form button {
-        background-color: #3366cc;
-        color: #fff;
-        border: none;
-        border-radius: 1vh;
-        padding: 1.5vh;
-        font-size: 2vh;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        margin-top: 2vh;
-    }
-
-    .main-form button:hover {
-        background-color: #27408b;
-    }
-
-        
-        
         
             </style>
 
 <div id="popupForm" class="popup-form">
     <div class="popup-content">
         <span class="close">&times;</span>
-        <h2 class="form-heading">Demo Form</h2>
+        <h2 class="form-heading">Get Started</h2>
         <form class="main-form">
             <div class="group">
                 <input type="text" id="name" name="name" required placeholder=" ">
-                <label for="name">Name</label>
+                <label for="name">Company Name</label>
             </div>
             <div class="group">
                 <input type="email" id="email" name="email" required placeholder=" ">
-                <label for="email">Email</label>
+                <label for="email"> Email</label>
             </div>
             <div class="group">
                 <textarea id="comment" name="comment" rows="5" required placeholder=" "></textarea>
@@ -360,17 +241,15 @@
             <p class="text line9"><span class="variable">ls</span>.<span class="function">test_model</span>()</p>
         </div>
     </div>
-    <div class="text-box">
-        <div class="info-rightbox-subheading">
+    <div class="line4-text-box">
+        <div class="line4-info-rightbox-subheading">
             JUST 4 Lines?
-
         </div>
-        <div class="info-rightbox-text">
+        <div class="line4-info-rightbox-text">
             Our AI uses 4 lines of code to redefine
             <br>the 1940s Nyquist theorem for scientific computing
-            
         </div>
-        <div class="info-rightbox-text">
+        <div class="line4-info-rightbox-text">
             NO SECURITY THREATS
             <br>
             <br>
@@ -384,6 +263,8 @@
             <br><br>
         </div>
     </div>
+    
+    
 </div>
 <canvas id="canvas"></canvas>
 

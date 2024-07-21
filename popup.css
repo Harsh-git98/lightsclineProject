@@ -1,0 +1,167 @@
+
+.popup-form {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 10000;
+    left: 20vw;
+    top: 20vh;
+    max-height: 80vh;
+    min-height: 10vh;
+    min-width: 60vw;
+    background-color:transparent;
+    filter: blur(30px);
+    
+    border-radius: 2vh;
+    filter: opacity(1);
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 2vh 2vw;
+    border-radius: 2vh;
+    border: 1vw solid #27408b;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    box-shadow: 0 0 1vh rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #0B0419;
+    float: right;
+    font-size: 5vh;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+.form-heading {
+    font-size: 3vh;
+    text-align: center;
+    margin-bottom: 2vh;
+    font-family: "Cabin Sketch", sans-serif;
+    color: #0B0419;
+    font-weight: bolder;
+}
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.group {
+    position: relative;
+    margin-bottom: 2vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-form input,
+.main-form textarea {
+    padding: 1vh;
+    border-radius: 1vh;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+    font-size: 2vh;
+}
+
+.main-form label {
+    font-size: 2vh;
+    color: rgb(99, 102, 102);
+    position: absolute;
+    top: -2vh;
+    left: 1vh;
+    background-color: #D8A8F7;
+    padding: 0 0.5vh;
+    transition: all 0.3s ease;
+}
+
+.main-form input:placeholder-shown + label,
+.main-form textarea:placeholder-shown + label {
+    top: 1vh;
+    background-color: transparent;
+}
+
+.main-form input:focus,
+.main-form textarea:focus {
+    border-color: #D8A8F7;
+}
+
+.main-form input:focus + label,
+.main-form textarea:focus + label {
+    top: -2vh;
+    left: 1vh;
+    background-color: #fff;
+    color: #D8A8F7;;
+    font-weight: 600;
+    font-size: 2vh;
+}
+
+.main-form textarea {
+    resize: none;
+    height: 20vh;
+}
+
+.main-form button {
+    background-color: #D8A8F7;;
+    color: #fff;
+    border: none;
+    border-radius: 1vh;
+    padding: 1.5vh;
+    font-size: 2vh;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 2vh;
+    font-family: "Cabin Sketch", sans-serif;
+    color: #0B0419;
+    font-weight: 2000;
+}
+
+.main-form button:hover {
+    background-color: #27408b;
+}
+
+    
+@media (max-aspect-ratio: 1/1) {
+    .popup-form {
+        display: none; /* Hidden by default */
+        position: fixed;
+        z-index: 10000;
+        left: 2.5vw;
+        top: 20vh;
+        max-height: 80vh;
+        min-height: 10vh;
+        min-width: 90vw;
+        background-color:transparent;
+        filter: blur(30px);
+        
+        border-radius: 2vh;
+        filter: opacity(1);
+    }
+    
+.main-form input,
+.main-form textarea {
+    padding: 1.5vh;
+    border-radius: 1vh;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    width: 90%;
+    background-color: transparent;
+    font-size: 2vh;
+}
+.group {
+    position: relative;
+    margin-bottom: 2vh;
+    margin-left:5vw;
+    
+    justify-content: center;
+    align-items: center;
+}
+}
