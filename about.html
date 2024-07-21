@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="ceo-info.css">
     <link rel="stylesheet" href="ourmission.css">
+    <link rel="stylesheet" href="popup.css">
 
 
     <style>
@@ -37,17 +38,15 @@
 </head>
 <body>
 
-
-
     <nav class="nav">
         <div class="container">
             <div class="logo">
                 <img id="navbar-logo-image"src="imagelogo.png" alt="logo">
-                <a id="navbar-name" href="#">LightScline</a>
+                <a id="navbar-name" href="#">Lightscline</a>
             </div>
             <div id="mainListDiv" class="main_list">
                 <ul class="navlinks">
-                    <li><a href="/">Home</a></li>
+                    <li><a href="#">Home</a></li>
                     <li><a href="/about.html">About</a></li>
                     <li class="resources"><a class="resources-hover">Resources</a>
 
@@ -63,7 +62,7 @@
 
      
                     </li>
-                    <li ><a href="#" id="Demo-navbar">Demo&#x2192;</a></li>
+                    <li ><a href="#" id="Demo-navbar" class="popbar">Demo&#x2192;</a></li>
                 </ul>
             </div>
         </div>
@@ -110,6 +109,46 @@
    
 </div>
 
+
+
+
+
+
+
+<div id="popupForm" class="popup-form">
+    <div class="popup-content">
+        <span class="close">&times;</span>
+        <h2 class="form-heading">Get Started</h2>
+        <form class="main-form">
+            <div class="group">
+                <input type="text" id="name" name="name" required placeholder=" ">
+                <label for="name">Company Name</label>
+            </div>
+            <div class="group">
+                <input type="email" id="email" name="email" required placeholder=" ">
+                <label for="email"> Email</label>
+            </div>
+            <div class="group">
+                <textarea id="comment" name="comment" rows="5" required placeholder=" "></textarea>
+                <label for="comment">Comment</label>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="mission-container">
     <div class="mission-content">
         <h1>Our Mission</h1>
@@ -128,7 +167,7 @@
     </div>
 </div>
 
-
+<hr>
 
 <!-- VISION CONTAINER -->
 
@@ -161,18 +200,17 @@
 
 
 <div class="mission-container">
-
-    <div class="mission-collage">
-        <div class="mission-grid-item"><img src="our mission.png" alt="">
-        </div>
         
-    </div>
     <div class="mission-content">
-        <h1>Our STORY</h1>
+        <hr>
+        <h1 style="text-align: center;">OUR STORY</h1>
+        <hr>
         <p>
             Lightscline was born out of a shared vision among a diverse team of innovators committed to transforming sensor data management. Our journey began at Penn State University, where Ankur Verma, a Ph.D. candidate and Entrepreneurial Fellow, teamed up with Ayush Goyal, an ex-Software Engineer and current MS in CS candidate, and Dr. Soundar Kumara, a Chair Professor in Industrial Engineering. Driven by a passion for deep tech, we united our expertise in sensing, AI-based predictive analytics, and large-scale software design to tackle the inefficiencies plaguing contemporary data collection and analysis pipelines.
              <br>
+             <br>
             Our entrepreneurial spirit led us to participate in several prestigious programs, including the National Science Foundation I-Corps National program, the regional program, and PSU Launchbox Happyvalley Idea Testlab. These experiences honed our business acumen and validated our innovative approaches. Our dedication and breakthrough ideas earned us the Diefenderfer Fellowship in Entrepreneurship from Penn State University, further propelling our mission to revolutionize the sensor industry.
+            <br>
             <br>
             Based in State College, Pennsylvania, Lightscline continues to thrive at the intersection of academia and industry. Our team's commitment to independent thinking and iterative testing drives us to push boundaries and deliver cutting-edge solutions. As we look to the future, we remain steadfast in our goal to make sensor data management more efficient, economical, and accessible for businesses worldwide.
 
@@ -387,6 +425,32 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="nav.js"></script>
+    <script>
+        
+document.addEventListener('DOMContentLoaded', function() {
+    var popup = document.getElementById("popupForm");
+    var btns = document.querySelectorAll(".popbar");
+    var span = document.getElementsByClassName("close")[0];
+
+    btns.forEach(function(btn) {
+        btn.onclick = function(event) {
+            event.preventDefault(); // Prevent the default action
+            popup.style.display = "block";
+        }
+    });
+
+    span.onclick = function() {
+        popup.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == popup) {
+            popup.style.display = "none";
+        }
+    }
+});
+
+    </script>
 
 
 
