@@ -11,8 +11,8 @@
 
 .card-client {
   background: transparent;
-  width: 25vw; /* Maintain relative width */
-  height: 40vw; /* Enforce the 4:3 aspect ratio */
+  width: 15vw; /* Maintain relative width */
+  height: 25vw; /* Enforce the 4:3 aspect ratio */
   padding-top: 25px;
   padding-bottom: 25px;
   padding-left: 20px;
@@ -124,11 +124,11 @@
   .social-media a .tooltip-social:after {
     border-top-color: #262626;
   }
-  
+/*   
   .social-media a:hover .tooltip-social {
     opacity: 1;
     transform: translate(-50%, -130%);
-  }
+  } */
 
 
   
