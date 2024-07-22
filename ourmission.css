@@ -27,9 +27,8 @@
 }
 
 .mission-collage {
-    display: grid;
     gap: 10px;
-    flex: 1;
+    min-width: 40vw;
     padding: 20px;
 }
 
@@ -39,7 +38,7 @@
     max-width: 40vw;
 }
 .mission-grid-item img{
-    max-width: 50vw;
+    max-width: 40vw;
 }
 
 @keyframes fadeIn {
