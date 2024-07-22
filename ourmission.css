@@ -59,4 +59,11 @@
     .mission-grid-item img{
         max-width: 70vw;
     }
+
+    
+.mission-collage {
+    gap: 10px;
+    min-width: 70vw;
+    padding: 20px;
+}
 }
