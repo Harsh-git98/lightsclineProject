@@ -19,7 +19,9 @@
     margin-bottom: 20px;
     color: aliceblue;
 }
-
+#vision-h1{
+    text-align: right;
+}
 .mission-content p {
     font-size: 2vh;
     line-height: 1.6;
