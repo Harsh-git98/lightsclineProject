@@ -161,7 +161,7 @@
               z-index: 20;
               display: flex;
               flex-direction: row;
-              justify-content: space-evenly;
+              justify-content: space-around;
               align-items: center;
             
           }
@@ -328,8 +328,8 @@
 
 .line4-info-rightbox-subheading {
     font-size: 6vh;
-    font-weight: 50;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 140;
     color: #9966f8;
     margin-bottom: 2vh;
 }
