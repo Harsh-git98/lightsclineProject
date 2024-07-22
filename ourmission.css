@@ -5,14 +5,13 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
-    max-width: 1200px;
     margin: auto;
     animation: fadeIn 2s ease-in;
 }
 
 .mission-content {
     flex: 1;
-    padding: 20px;
+    padding: 2vw;
 }
 
 .mission-content h1 {
@@ -37,7 +36,7 @@
 .mission-grid-item {
     background-color: transparent;
     animation: fadeIn 2s ease-in;
-    max-width: 50vw;
+    max-width: 40vw;
 }
 .mission-grid-item img{
     max-width: 50vw;
