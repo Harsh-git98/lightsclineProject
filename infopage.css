@@ -30,7 +30,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--background-color);
+    background: transparent;
     background: radial-gradient(
             circle,
             var(--circle-color-start),
@@ -38,13 +38,13 @@
             rgba(12, 2, 34, 0.226) 0%
         ),
         radial-gradient(
-            circle at 4% 4%,
+            circle at 40% 94%,
             var(--circle-color-start),
             var(--circle-color-end) 20%,
             rgba(19, 7, 46, 0) 0%
         ),
         radial-gradient(
-            circle at 60% 10%,
+            circle at 60% 20%,
             var(--circle-color-start),
             var(--circle-color-end) 10%,
             rgba(19, 7, 46, 0) 0%
@@ -84,13 +84,8 @@
             var(--circle-color-start),
             var(--circle-color-end) 15%,
             rgba(19, 7, 46, 0) 0%
-        ),
-        radial-gradient(
-            circle at 100% 60%,
-            var(--circle-color-start),
-            var(--circle-color-end) 1%,
-            rgba(19, 7, 46, 0.959) 0%
         );
+        
     filter: blur(10px);
     
     z-index: -1;
@@ -105,9 +100,9 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to bottom, rgba(8, 8, 8, 0) 0%, rgba(8, 8, 8, 1) 90%);
+    background: transparent;
 
-    filter: blur(20px);
+   
     pointer-events: none;
     z-index: -1;
   }
