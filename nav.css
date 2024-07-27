@@ -117,8 +117,9 @@ color: #D8A8F7;
     border-radius: 10vw;
     border: 2% white solid;
     padding: 4%;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 30%;
+    padding-right: 30%;
+    margin-left: -1vw;
 
 }
 #resources-button{
