@@ -31,7 +31,7 @@
     right: 0;
     bottom: 0;
     background: transparent;
-    background: radial-gradient(
+    /* background: radial-gradient(
             circle,
             var(--circle-color-start),
             var(--circle-color-end) 20%,
@@ -84,12 +84,13 @@
             var(--circle-color-start),
             var(--circle-color-end) 15%,
             rgba(19, 7, 46, 0) 0%
-        );
+        ); */
         
     filter: blur(10px);
     
     z-index: -1;
     animation: moveCircles 1s infinite alternate;
+    
 }
 
 

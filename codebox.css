@@ -175,6 +175,7 @@
           #codebox .text-box {
               height: 40%;
               background: transparent;
+              text-align: left;
               display: flex;
               flex-direction: column;
               align-items: center;
@@ -336,6 +337,17 @@
 
 .line4-info-rightbox-text {
     font-size: 2vh;
+    text-align: justify;
+    
+    color: #f8f8f2;
+    font-weight: bold;
+    margin-bottom: 2vh;
+}
+
+.line4-info-rightbox-text2 {
+    font-size: 2vh;
+    text-align: left;
+    padding-left: 5vh;
     color: #f8f8f2;
     font-weight: bold;
     margin-bottom: 2vh;
