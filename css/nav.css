@@ -92,6 +92,7 @@ body {
 
 .nav div.main_list ul li a:hover {
     color: #D8A8F7;
+    cursor: pointer;
 }
 
 
