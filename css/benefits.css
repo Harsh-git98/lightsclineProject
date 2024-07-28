@@ -9,7 +9,7 @@
 position: relative;
 width: 100%;
 height: 100px; /* Make sure the container has a height to show the background */
-background: url(image.png);
+background: url(/img/image.png);
 background-size: 2000px 100px;
 animation: ani_wave 15s linear infinite;
 overflow: hidden; /* Ensure no overflow */
@@ -60,8 +60,8 @@ hr{
   
   .benecard {
     position: relative;
-    width: 15vw;
-    height: 40vh;
+    width: 13vw;
+    height: 36vh;
     background: rgb(255,255,255);
       display: flex;
       background: rgb(255,255,255); flex-direction: column;
@@ -139,7 +139,7 @@ hr{
   }
   
 
-  @media screen  and (max-aspect-ratio: 3/3){
+  @media screen  and (max-aspect-ratio: 10/10){
     .benefit-section {
         margin-top: 5vh;
         margin-bottom: 5vh;
@@ -153,8 +153,8 @@ hr{
       }
       .benecard {
         position: relative;
-        width: 30vw;
-        height: 44vw;
+        width: 28vw;
+        height: 40vw;
         background: rgb(255,255,255);
        
         display: flex;
@@ -178,14 +178,14 @@ hr{
         inset: 0;
         left: -5px;
         margin: auto;
-        width: 33vw;
-        height: 44vw;
+        width: 30vw;
+        height: 42vw;
         border-radius: 10px;
         background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
         z-index: -10;
         pointer-events: none;
         transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        transform: rotate(-15deg) scaleX(1.05) scaleY(1.07);
+        transform: rotate(-20deg) scaleX(1.05) scaleY(1.07);
       }
 
       .benecard:hover::before {

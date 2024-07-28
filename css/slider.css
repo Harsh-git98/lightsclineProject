@@ -24,6 +24,7 @@
   }
   .wrapper img{
     max-height: 25vh;
+    outline: 10px solid #070212;
   }
   
   .wrapper:has(+ * + * + .selected) {
@@ -145,5 +146,6 @@
   
   img {
     border-radius: 0.5vw;
+    
   }
   
