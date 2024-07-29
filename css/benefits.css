@@ -126,8 +126,8 @@ hr{
   }
   
   .benecard p:last-child {
-    color: #e81cff;
-    font-weight: 600;
+    color: blueviolet;
+    font-weight: 800;
   }
   
   .benecard:hover::after {
