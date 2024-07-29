@@ -3,7 +3,7 @@
     display: none; /* Hidden by default */
     position: fixed;
     z-index: 10000;
-    left: 20vw;
+    left: 15vw;
     top: 20vh;
     max-height: 80vh;
     min-height: 10vh;
@@ -19,7 +19,7 @@
     background-color: #fff;
     padding: 2vh 2vw;
     border-radius: 2vh;
-    border: 1vw solid  #13072e;
+    border: 7px solid #26066b;
     width: 100%;
     height: 100%;
     text-align: left;
@@ -27,7 +27,7 @@
 }
 
 .close {
-    color: #0B0419;
+    color: #26066b;
     float: right;
     font-size: 5vh;
     font-weight: bold;
@@ -110,7 +110,7 @@
 }
 
 .main-form button {
-    background-color: blueviolet;
+    background-color: #26066b;
     color: #fff;
     border: none;
     border-radius: 1vh;
@@ -120,7 +120,6 @@
     transition: all 0.3s ease;
     margin-top: 2vh;
     font-family: "Cabin Sketch", sans-serif;
-    color: #0B0419;
     font-weight: 2000;
 }
 
